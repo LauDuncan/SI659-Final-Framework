@@ -12,6 +12,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Duncan Scenes/PassthroughFaderUnderlay.unity
     guid: 666ec383b2a03f44cad3047702e73327
   m_configObjects:
-    com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: 868ec25f05e12714e8a805fa79af8b9d, type: 2}
+    com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: f543b139267c5eb4ca7b530ebc28406e, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: f6271359c924acc4ab7cabb3d03ca909, type: 2}
-    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 6bcf51bae4ecb754192e822f3491a04b, type: 2}
+    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: dcabec4626b8171459c7854d41ecb1b9, type: 2}
