@@ -1087,6 +1087,183 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4922469374407738, guid: a42b76a8ae68dad4fb4fea3eda1ed3d9, type: 3}
   m_PrefabInstance: {fileID: 80510054}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &84853330
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 84853333}
+  - component: {fileID: 84853332}
+  - component: {fileID: 84853331}
+  m_Layer: 0
+  m_Name: '[BuildingBlock] Dictation'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &84853331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 84853330}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6da0ed72f4541d7b52607891bafa6f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShouldWrap: 1
+  ShouldLog: 1
+  dictationEvents:
+    _onRequestOptionSetup:
+      m_PersistentCalls:
+        m_Calls: []
+    _onRequestInitialized:
+      m_PersistentCalls:
+        m_Calls: []
+    _onRequestCreated:
+      m_PersistentCalls:
+        m_Calls: []
+    _onSend:
+      m_PersistentCalls:
+        m_Calls: []
+    _onMinimumWakeThresholdHit:
+      m_PersistentCalls:
+        m_Calls: []
+    _onMicDataSent:
+      m_PersistentCalls:
+        m_Calls: []
+    _onStoppedListeningDueToDeactivation:
+      m_PersistentCalls:
+        m_Calls: []
+    _onStoppedListeningDueToInactivity:
+      m_PersistentCalls:
+        m_Calls: []
+    _onStoppedListeningDueToTimeout:
+      m_PersistentCalls:
+        m_Calls: []
+    _onAborting:
+      m_PersistentCalls:
+        m_Calls: []
+    _onAborted:
+      m_PersistentCalls:
+        m_Calls: []
+    _onCanceled:
+      m_PersistentCalls:
+        m_Calls: []
+    _onRawResponse:
+      m_PersistentCalls:
+        m_Calls: []
+    _onPartialResponse:
+      m_PersistentCalls:
+        m_Calls: []
+    _onResponse:
+      m_PersistentCalls:
+        m_Calls: []
+    _onError:
+      m_PersistentCalls:
+        m_Calls: []
+    _onRequestCompleted:
+      m_PersistentCalls:
+        m_Calls: []
+    _onComplete:
+      m_PersistentCalls:
+        m_Calls: []
+    _onStartListening:
+      m_PersistentCalls:
+        m_Calls: []
+    _onStoppedListening:
+      m_PersistentCalls:
+        m_Calls: []
+    _onMicLevelChanged:
+      m_PersistentCalls:
+        m_Calls: []
+    _onPartialTranscription:
+      m_PersistentCalls:
+        m_Calls: []
+    _onFullTranscription:
+      m_PersistentCalls:
+        m_Calls: []
+    _onUserPartialTranscription:
+      m_PersistentCalls:
+        m_Calls: []
+    _onUserFullTranscription:
+      m_PersistentCalls:
+        m_Calls: []
+    _onDictationSessionStarted:
+      m_PersistentCalls:
+        m_Calls: []
+    _onDictationSessionStopped:
+      m_PersistentCalls:
+        m_Calls: []
+  runtimeConfiguration:
+    witConfiguration: {fileID: 11400000, guid: 7d29f16a621e075438bd6ccd5dc73251, type: 2}
+    minKeepAliveVolume: 0.0005
+    minKeepAliveTimeInSeconds: 2
+    minTranscriptionKeepAliveTimeInSeconds: 1
+    maxRecordingTime: 20
+    soundWakeThreshold: 0.0005
+    sampleLengthInMs: 10
+    micBufferLengthInSeconds: 1
+    maxConcurrentRequests: 5
+    sendAudioToWit: 1
+    customTranscriptionProvider: {fileID: 0}
+    alwaysRecord: 0
+    preferredActivationOffset: -0.5
+    transcribeOnly: 0
+    pubSubSettings:
+      PubSubTopicId: 
+      PublishOptions:
+        transcriptionResponses: 1
+        composerResponses: 1
+      SubscribeOptions:
+        transcriptionResponses: 1
+        composerResponses: 1
+    dictationConfiguration:
+      multiPhrase: 0
+      scenario: default
+      inputType: text_default
+  usePlatformServices: 0
+  doNotFallbackToWit: 0
+  enableConsoleLogging: 0
+--- !u!114 &84853332
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 84853330}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b023183069df224080314a560e6e1ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  blockId: af49bc82-4174-46e0-b1e4-40f1c05b4908
+  instanceId: 5e3ba4d3-742b-40fa-9cd4-755bb7ff2a66
+  version: 1
+  installationRoutineCheckpoint:
+    _installationRoutineId: 
+    _installationVariants: []
+--- !u!4 &84853333
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 84853330}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &87402031
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8090,6 +8267,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4389762939504278, guid: 91ca78bf8be64314ab883fa8eda91dcf, type: 3}
   m_PrefabInstance: {fileID: 806479474}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &806506410 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8728948062671549701, guid: 258a3f1b594ecc3488cc341c4511c14e, type: 3}
+  m_PrefabInstance: {fileID: 1430952946}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &816984766
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11904,6 +12086,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1764736221}
+  - {fileID: 806506410}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1232728900
@@ -14102,6 +14285,86 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4389762939504278, guid: 91ca78bf8be64314ab883fa8eda91dcf, type: 3}
   m_PrefabInstance: {fileID: 1414345882}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1430952946
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1229439653}
+    m_Modifications:
+    - target: {fileID: 4253491741340658959, guid: 258a3f1b594ecc3488cc341c4511c14e, type: 3}
+      propertyPath: dictationExperience
+      value: 
+      objectReference: {fileID: 84853331}
+    - target: {fileID: 4253491741340658959, guid: 258a3f1b594ecc3488cc341c4511c14e, type: 3}
+      propertyPath: keywords.Array.data[0]
+      value: Status
+      objectReference: {fileID: 0}
+    - target: {fileID: 4253491741340658959, guid: 258a3f1b594ecc3488cc341c4511c14e, type: 3}
+      propertyPath: keywords.Array.data[1]
+      value: Help
+      objectReference: {fileID: 0}
+    - target: {fileID: 4253491741340658959, guid: 258a3f1b594ecc3488cc341c4511c14e, type: 3}
+      propertyPath: keywords.Array.data[2]
+      value: Record
+      objectReference: {fileID: 0}
+    - target: {fileID: 4253491741340658959, guid: 258a3f1b594ecc3488cc341c4511c14e, type: 3}
+      propertyPath: keywords.Array.data[3]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7818731754198809897, guid: 258a3f1b594ecc3488cc341c4511c14e, type: 3}
+      propertyPath: m_Name
+      value: VoiceCommand
+      objectReference: {fileID: 0}
+    - target: {fileID: 8728948062671549701, guid: 258a3f1b594ecc3488cc341c4511c14e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.3160742
+      objectReference: {fileID: 0}
+    - target: {fileID: 8728948062671549701, guid: 258a3f1b594ecc3488cc341c4511c14e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.43275714
+      objectReference: {fileID: 0}
+    - target: {fileID: 8728948062671549701, guid: 258a3f1b594ecc3488cc341c4511c14e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 3.0235434
+      objectReference: {fileID: 0}
+    - target: {fileID: 8728948062671549701, guid: 258a3f1b594ecc3488cc341c4511c14e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8728948062671549701, guid: 258a3f1b594ecc3488cc341c4511c14e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8728948062671549701, guid: 258a3f1b594ecc3488cc341c4511c14e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8728948062671549701, guid: 258a3f1b594ecc3488cc341c4511c14e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8728948062671549701, guid: 258a3f1b594ecc3488cc341c4511c14e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8728948062671549701, guid: 258a3f1b594ecc3488cc341c4511c14e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8728948062671549701, guid: 258a3f1b594ecc3488cc341c4511c14e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 849807405295334452, guid: 258a3f1b594ecc3488cc341c4511c14e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+  m_SourcePrefab: {fileID: 100100000, guid: 258a3f1b594ecc3488cc341c4511c14e, type: 3}
 --- !u!1001 &1437679020
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21012,3 +21275,4 @@ SceneRoots:
   - {fileID: 1106887679}
   - {fileID: 1229439653}
   - {fileID: 840622282}
+  - {fileID: 84853333}
