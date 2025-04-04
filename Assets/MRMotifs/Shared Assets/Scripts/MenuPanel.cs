@@ -18,6 +18,12 @@ namespace MRMotifs.SharedAssets
     [MetaCodeSample("MRMotifs-SharedAssets")]
     public class MenuPanel : MonoBehaviour
     {
+
+        [Header("Fade Screen")]
+        [Tooltip("The fade screen prefab that fades in and out.")]
+        [SerializeField]
+        private FadeScreenController fadeScreenController;
+
         [Header("MR Motifs - Library: Sample Scenes")]
         [Tooltip("List of buttons that load the scenes.")]
         [SerializeField]
@@ -120,11 +126,22 @@ namespace MRMotifs.SharedAssets
 
         private IEnumerator LoadSceneAsync(string sceneName)
         {
-            var asyncLoad = SceneManager.LoadSceneAsync(sceneName);
-            while (asyncLoad is { isDone: false })
+            if (fadeScreenController != null)
             {
+                fadeScreenController.FadeOut();
+            }
+
+            AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(sceneName);
+            asyncLoad.allowSceneActivation = false;
+
+            float timer = 0f;
+            while (timer <= fadeScreenController.fadeDuration && !asyncLoad.isDone)
+            {
+                timer += Time.deltaTime;
                 yield return null;
             }
+
+            asyncLoad.allowSceneActivation = true;
         }
 
         public void ToggleMenu()
