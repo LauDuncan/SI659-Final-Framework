@@ -11,7 +11,7 @@ public class doorsOpen : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         //Check if PlayerCollider entered trigger
-        if (other.gameObject.name == "player" && !doorOpen)
+        if (other.gameObject.CompareTag("Player") && !doorOpen)
         {
             Debug.Log("Player entered door zone");
             leftDoorAnimator.SetBool("leftDoorOpen", true);
@@ -23,7 +23,7 @@ public class doorsOpen : MonoBehaviour
     private void OnTriggerExit(Collider other)
     {
          //Check if PlayerCollider entered trigger
-        if (other.gameObject.name == "player" && doorOpen)
+        if (other.gameObject.CompareTag("Player") && doorOpen)
         {
             Debug.Log("Player Exited door zone");
             leftDoorAnimator.SetTrigger("close");
