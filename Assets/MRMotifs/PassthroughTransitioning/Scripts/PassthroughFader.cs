@@ -220,6 +220,7 @@ namespace MRMotifs.PassthroughTransitioning
 
                 case FaderState.VR:
                     oVRPassthroughLayer.enabled = true;
+                    m_meshRenderer.enabled = true;
                     onStartFadeIn?.Invoke();
                     break;
 
@@ -288,11 +289,18 @@ namespace MRMotifs.PassthroughTransitioning
                     m_mainCamera.clearFlags = CameraClearFlags.Skybox;
                     m_mainCamera.backgroundColor = m_skyboxBackgroundColor;
                 }
-
                 onFadeOutComplete?.Invoke();
             }
 
             m_meshRenderer.enabled = (passthroughViewingMode != PassthroughViewingMode.Underlay);
+
+            yield return new WaitForEndOfFrame();
+
+            if (oVRPassthroughLayer.enabled == false)
+            {
+                m_meshRenderer.enabled = false;
+            }
+            // Debug.Log($"passthroughFader - meshRenderer enabled: {m_meshRenderer.enabled}");
         }
     }
 }
