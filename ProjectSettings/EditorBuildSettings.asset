@@ -6,12 +6,10 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Duncan Scenes/Office - SceneTransition.unity
-    guid: 3028991df47dfd54fbb75b83622d5689
-  - enabled: 1
-    path: Assets/Scenes/Duncan Scenes/Office - SceneTransition 1.unity
-    guid: de0a5ae45d1ca97449c54a5ae2bb7077
+    path: Assets/Scenes/iris/avatar interaction.unity
+    guid: da889478304b64c198bb03bb217256c3
   m_configObjects:
+    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 548164462ba774596a2fa05b837e4bd7, type: 2}
     com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: 868ec25f05e12714e8a805fa79af8b9d, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: f3818bf21a5945249b4d791f0de10652, type: 2}
     com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 6bcf51bae4ecb754192e822f3491a04b, type: 2}
