@@ -84,7 +84,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1068379710983464810}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 71f9ed505af4e0e489491bd4e755993e, type: 3}
   m_Name: 
@@ -92,9 +92,9 @@ MonoBehaviour:
   animator: {fileID: 6014656085957994410}
   trigger1: idle
   trigger2: move
-  trigger1Button: 1
-  trigger2Button: 2
-  controller: 2
+  trigger1Button: 257
+  trigger2Button: 514
+  controller: 1
 --- !u!95 &6014656085957994410 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 1661838065252282980, guid: cbc02a91841771b4ab9f12678612c4b1, type: 3}
