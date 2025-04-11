@@ -4,6 +4,7 @@
     "com.meta.xr.sdk.avatars": "35.1.0",
     "com.unity.collab-proxy": "2.7.1",
     "com.unity.feature.development": "1.0.1",
+    "com.unity.ide.cursor": "https://github.com/boxqkrtm/com.unity.ide.cursor.git",
     "com.unity.render-pipelines.universal": "14.0.12",
     "com.unity.shadergraph": "14.0.12",
     "com.unity.textmeshpro": "3.0.7",

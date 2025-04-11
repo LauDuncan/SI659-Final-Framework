@@ -6,8 +6,20 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/iris/Office - SceneTransition 2.unity
-    guid: 9b43e3cf355d44cbf851e0bac6bffe22
+    path: Assets/Scenes/1. Final/MainOffice.unity
+    guid: ae1f6eb7422958c45ba172daf6908e46
+  - enabled: 1
+    path: Assets/Scenes/1. Final/TaskPlanning.unity
+    guid: 8cca4c90c935ba94d891ee2567ffa230
+  - enabled: 1
+    path: Assets/Scenes/1. Final/HurricaneScene.unity
+    guid: 98d9e8db5077657428aff537afcbdef8
+  - enabled: 1
+    path: Assets/Scenes/1. Final/Earthquake.unity
+    guid: 6d4f86997694c5c4a8e0b195f0d69da9
+  - enabled: 1
+    path: Assets/Scenes/1. Final/DecompressionScene.unity
+    guid: 66cc3698552b91948b508bdef8ba4271
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 548164462ba774596a2fa05b837e4bd7, type: 2}
     com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: 868ec25f05e12714e8a805fa79af8b9d, type: 2}
