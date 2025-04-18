@@ -38,6 +38,10 @@ public class RoomToSceneTransition : MonoBehaviour
         {
             countdownCanvas.SetActive(false);
         }
+
+        if (fadeScreenController == null) {
+            fadeScreenController = GameObject.Find("FaderScreenController").GetComponent<FadeScreenController>();
+        }
     }
 
     private void Update()
