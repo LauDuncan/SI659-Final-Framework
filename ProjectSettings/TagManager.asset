@@ -15,6 +15,9 @@ TagManager:
   - QDSUIToggleBorderlessButton
   - QDSUITextSecondaryColor
   - spotlight
+  - cuboid
+  - PlayerSpawn
+  - PlayerRig
   layers:
   - Default
   - TransparentFX
