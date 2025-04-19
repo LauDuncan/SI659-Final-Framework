@@ -936,7 +936,7 @@ ParticleSystem:
         m_RotationOrder: 4
     randomizeRotationDirection: 0
     gravitySource: 0
-    maxNumParticles: 1000
+    maxNumParticles: 100
     customEmitterVelocity: {x: 0, y: 0, z: 0}
     size3D: 0
     rotation3D: 0
@@ -1202,7 +1202,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 100
+      scalar: 25
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -6400,7 +6400,7 @@ ParticleSystem:
         m_RotationOrder: 4
     randomizeRotationDirection: 0
     gravitySource: 0
-    maxNumParticles: 1000
+    maxNumParticles: 100
     customEmitterVelocity: {x: 0, y: 0, z: 0}
     size3D: 0
     rotation3D: 0
@@ -6666,7 +6666,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 100
+      scalar: 25
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -13122,7 +13122,7 @@ Transform:
   m_GameObject: {fileID: 5590832162113877689}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0.149, y: -0.235, z: 0.114}
+  m_LocalPosition: {x: 0.149, y: -0.102, z: 0.114}
   m_LocalScale: {x: 0.13001741, y: 0.16747503, z: 0.0183173}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -13264,7 +13264,7 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 5
+      scalar: 3
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -13699,7 +13699,7 @@ ParticleSystem:
         m_RotationOrder: 4
     randomizeRotationDirection: 0
     gravitySource: 0
-    maxNumParticles: 1000
+    maxNumParticles: 100
     customEmitterVelocity: {x: 0, y: 0, z: 0}
     size3D: 0
     rotation3D: 0
@@ -13965,7 +13965,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 100
+      scalar: 25
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -19482,7 +19482,6 @@ MonoBehaviour:
   - {fileID: 3231764878900700332}
   - {fileID: 3023135809614606535}
   - {fileID: 6355569076766959820}
-  powerLines: []
   damageSound: {fileID: 1750381653491338661}
   arrow: {fileID: 4957068054367048673}
   avatar: {fileID: 7115212963910561098, guid: ce28911f84232dc4697a46a15dfcce4c, type: 3}
@@ -19533,6 +19532,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5198293036173406706}
   - component: {fileID: 185898366408392432}
+  - component: {fileID: 8659396682274395588}
   m_Layer: 0
   m_Name: Directional Light
   m_TagString: Untagged
@@ -19617,6 +19617,29 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &8659396682274395588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6627994438247356393}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1 &6877866487495908311
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -39,6 +40,7 @@ public class RoutePlanning : MonoBehaviour
         {
             if (OVRInput.GetDown(OVRInput.RawButton.A))
             {
+                Debug.Log("start drawing");
                 StartDrawing();
             }
             else if (isDrawing && OVRInput.Get(OVRInput.RawButton.A))
