@@ -9,7 +9,7 @@ public class VoiceTrigger : MonoBehaviour
     {
         if (other.CompareTag("Player") && ttsSpeaker != null)
         {
-            ttsSpeaker.Speak("Welcome! This is your task."); // Replace with your script input
+            ttsSpeaker.Speak("Welcome to your training!"); // Replace with your script input
         }
     }
 }

@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-4823488739260618460
+--- !u!114 &-980184996201852381
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -23,29 +23,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ae5a46bda3295124c99b0e6537ac7252, type: 3}
-  m_Name: Tutorial1
+  m_Name: witConfig
   m_EditorClassIdentifier: 
-  _clientAccessToken: QW6H63G6SXBVDQBOOXDSFZ2PNGESGQRL
+  _clientAccessToken: 4F3HFHE43W5QOAZ2IXHKMTFDBU2J3TCF
   editorVersionTag: 
   buildVersionTag: 
   _appInfo:
-    name: tutorial
-    id: 1903120540491857
+    name: avatar_voice
+    id: 1122768389602332
     lang: en
     isPrivate: 1
-    createdAt: 2025-04-02T19:25:23-0700
+    createdAt: 2025-03-30T14:07:20-0700
     trainingStatus: 1
     lastTrainDuration: 0
     lastTrainedAt: 1969-12-31T16:00:00-0800
     nextTrainAt: 1969-12-31T16:00:00-0800
     intents: []
     entities: []
-    traits:
-    - name: wit$greetings
-      id: 5900cc2d-41b7-45b2-b21f-b950d3ae3c5c
-      values:
-      - id: 547401529279585
-        value: true
+    traits: []
     versionTags: []
     voices:
     - name: wit$British Butler
@@ -554,8 +549,8 @@ MonoBehaviour:
       - phoneme_events
       - word_events
   _configData:
-  - {fileID: -4823488739260618460}
-  _configurationId: 45a5eb03-fd4c-4024-a203-61f83faf6c4f
+  - {fileID: -980184996201852381}
+  _configurationId: 2e786cae-f4c1-438b-b9e9-3b3e08f6bf49
   _requestType: 0
   _requestTimeoutMs: 10000
   endpointConfiguration:
@@ -572,7 +567,7 @@ MonoBehaviour:
   isDemoOnly: 0
   useIntentAttributes: 1
   useConduit: 1
-  _manifestLocalPath: ConduitManifest-168d35c8-7883-4489-a431-2a78bb97f6a9.json
+  _manifestLocalPath: ConduitManifest-eb0432af-5d84-478b-9a55-a75d4cd95358.json
   excludedAssemblies:
   - Oculus.Voice.Demo, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
   - Meta.WitAi.Samples, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
