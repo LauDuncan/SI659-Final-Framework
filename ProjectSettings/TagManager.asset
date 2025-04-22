@@ -18,6 +18,24 @@ TagManager:
   - cuboid
   - PlayerSpawn
   - PlayerRig
+  - QDSUISection
+  - QDSUIPrimaryButton
+  - QDSUITextSecondaryInvertedColor
+  - QDSUITextInvertedColor
+  - QDSUIDestructiveButton
+  - QDSUIBackplateGradient
+  - QDSUIToggleSwitch
+  - Locomotion
+  - LocoButton
+  - LocoText
+  - PassThroughButton
+  - PassThrough
+  - sittingpoint
+  - stealingpoint
+  - QDSUITextInputField
+  - SamplesInfoPanel
+  - QDSUIToggleCheckboxRadio
+  - PlayerTooltipZone
   layers:
   - Default
   - TransparentFX
